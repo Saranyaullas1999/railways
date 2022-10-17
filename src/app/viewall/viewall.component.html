@@ -1,4 +1,4 @@
 <p>Hi {{name}}</p>
 <input type="text" class="form-control" value="{{name}}" name="name" [(ngModel)]="name">
 <br>
-<button class="btn btn-success" (click)="readValue()">Submit</button>
+<button class="btn btn-success" (click)="readValue()" [disabled]="status">Submit</button>
